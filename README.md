@@ -146,5 +146,15 @@ int main() {
                   b3-=1;}
                   b5=b2*b3;
                   printf("Factorial of %d is = %d",b2,b5);}
+		  if (b1==3){
+            unsinged long long c1,c2,c3,c4=1;
+            printf("Enter the number you would like to calculate factorial of - ");
+              scanf("%",&c1);
+              c2=c1;
+        while (c2>=2){
+            c3=c3*(c2-1);
+            c2-=1;}
+	    c4=c1*c3;
+        printf("Factorial of % is = %",c1,c4);}
 return 0;
 }
