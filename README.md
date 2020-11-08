@@ -116,3 +116,35 @@ main ()
     if (e5==1 || e6==1){printf("Alphabetical order : %c %c %c",third,second,first);}
   return 0;
 }
+
+
+//Code for factorial calculation with user chosen variables
+
+#include <stdio.h>
+
+int main() {
+ char b1;
+    printf("Enter the respective number corresponding to the variable you like to use \nchar(1)\nint(2)\nlonglong(3)\n")
+    scanf("%c",&b1);
+    if (b1==1)
+    unsigned char a1,a2,a3,a4=1;
+    {printf("Enter the number you would like to calculate factorial of - ");
+    scanf("%c",&a1);
+        a2=a1;
+        while(a2>=2){
+            a3=a3*(a2-1);
+            a2-=1;}
+            a4=(a1*a3);
+            printf("Factorial of %c is = %c",a1,a4);}
+        if  (b1==2){
+              unsinged int b2,b3,b4,b5=1;
+              printf("Enter the number you would like to calculate factorial of - ");
+              scanf("%d",&b2);
+              b3=b2;
+        while (b3>=2){
+                  b4=b4*(b3-1);
+                  b3-=1;}
+                  b5=b2*b3;
+                  printf("Factorial of %d is = %d",b2,b5);}
+return 0;
+}
