@@ -118,7 +118,7 @@ main ()
 }
 
 
-//Code for factorial calculation with user chosen variables
+//Code for factorial calculation with user chosen variables (while loop)
 
 #include <stdio.h>
 
