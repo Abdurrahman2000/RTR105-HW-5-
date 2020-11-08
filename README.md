@@ -158,3 +158,47 @@ int main() {
         printf("Factorial of % is = %",c1,c4);}
 return 0;
 }
+
+//Code for factorial calculation with user chosen variables (for loop)
+
+#include <stdio.h>
+
+int main() {
+    char b1;
+    printf("Enter the respective number corresponding to the variable you like to use char(1) int(2) long long int(3)\n");
+    scanf("%c",&b1);
+    
+    if (b1==1){
+    unsigned char a1,a2,a3,a4=1;
+    printf("Enter the number you would like to calculate factorial of - ");
+    scanf("%c",&a1);
+    if (a1==1||a1==0){printf("Factorial of %c is = 1",a1);}
+        a2=a1;
+        for(;a2>=2;){
+            a3=a3*(a2-1);
+            a2-=1;
+           }
+            a4=a1*a3;
+            printf("Factorial of %c is = %c",a1,a4);}
+        if  (b1==2){
+              unsigned int b2,b3,b4,b5=1;
+              printf("Enter the number you would like to calculate factorial of - ");
+              scanf("%d",&b2);
+              if (b2==1||b2==0){printf("Factorial of %d is = 1",b2);}
+              b3=b2;
+        for (;b3>=2;)
+        if (b1==3){
+            unsigned long long int c1,c2,c3,c4=1;
+            printf("Enter the number you would like to calculate factorial of - ");
+              scanf("%llu",&c1);
+              if (c1==1||c1==0){printf("Factorial of %llu is = 1",c1);}
+              c2=c1;
+        for(;c2>=2;){
+            c3=c3*(c2-1);
+            c2-=1;
+        }       c4=c1*c3;
+        printf("Factorial of %llu is = %llu",c1,c4);
+        }
+        
+    return 0;
+}}
