@@ -202,3 +202,45 @@ int main() {
         
     return 0;
 }}
+
+Assignment for functions :
+
+//No argument and no retun function
+#include <stdio.h>
+void firstfunction(){
+    printf("ouput of first function\n");
+}
+//No argument with return function
+int secondfunction(){
+    int b=5;
+    return b;
+}
+//No return with arguments
+void thirdfunction(int e){
+printf("Output of third function : Value you entered = %d\n",e);
+}
+//Function with arguments and return
+int factorial(int f){
+    int p,q;
+    q=f;
+    p=1;
+   for(;q>1;q-=1){
+       p=p*(q);
+   }
+    return p;
+}
+
+int main() {
+    int a,d,c,c1;
+    firstfunction();
+    a=secondfunction();
+    printf("Return value of second function = %d\n",a);
+    printf("Enter an integer : ");
+    scanf("%d",&d);
+    thirdfunction(d);
+    printf("Enter a number you would like to calculate the factorial of - ");
+    scanf("%d",&c);
+    c1=factorial(c);
+    printf("Factorial of %d is = %d",c,c1);
+    return 0;
+}
